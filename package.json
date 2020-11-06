@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/ikhlas-firlana/telegrambot#readme",
   "dependencies": {
-    "node-telegram-bot-api": "^0.50.0"
+    "telegraf": "^3.38.0"
   }
 }

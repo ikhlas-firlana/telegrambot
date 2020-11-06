@@ -1,14 +1,8 @@
-const Telegram = require('node-telegram-bot-api');
+const { Telegraf } = require('telegraf')
 
-const token     = process.env.TOKEN;
-
-const botInstance = new Telegram(token, { polling: true });
-
-botInstance.on('message', function(msg) {
-    var chatId = msg.chat.id;
-    var message = msg.text.toString();
-    console.log(message);
-    if (message == 'hi') {
-        botInstance.sendMessage(chatId, "Hi, i am new chat bot")
-    }
-})
+const bot = new Telegraf(process.env.TOKEN)
+bot.start((ctx) => ctx.reply('Welcome!'))
+bot.help((ctx) => ctx.reply('Send me a sticker'))
+bot.on('sticker', (ctx) => ctx.reply('👍'))
+bot.hears('hi', (ctx) => ctx.reply('Hey there'))
+bot.launch()
