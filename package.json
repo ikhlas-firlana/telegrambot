@@ -1,0 +1,23 @@
+{
+  "name": "telegrambot",
+  "version": "1.0.0",
+  "description": "telegram bot exploring",
+  "main": "index.js",
+  "scripts": {
+    "start": "make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikhlas-firlana/telegrambot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ikhlas-firlana/telegrambot/issues"
+  },
+  "homepage": "https://github.com/ikhlas-firlana/telegrambot#readme",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.50.0"
+  }
+}
